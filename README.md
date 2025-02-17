@@ -31,6 +31,20 @@
 ```bash
 $ npm install
 ```
+## Set Database 
+
+```bash
+TypeOrmModule.forRoot({
+      type: 'mysql',
+      host: 'localhost',
+      port: 3306,
+      username: 'root',
+      password: '',
+      database: 'webboard',
+      entities: [Category,Comment,Post,User,],
+      synchronize: true,
+    }),
+```
 
 ## Compile and run the project
 
